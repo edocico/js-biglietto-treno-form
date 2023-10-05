@@ -43,11 +43,18 @@ btnSendDOMElement.addEventListener('click', function (){
     price = nKm * 0.21
     console.log(price)
 
-    if (userAge === 0) {
-        price = price - ((price * 20) / 100)
-    } else if (userAge === 2) {
-        price = price - ((price * 40) / 100)
-    } 
+    if (userName === '') {
+        alert('i dati inseriti non sono validi')
+        
+    } else {
+        if (userAge === 0) {
+            price = price - ((price * 20) / 100)
+        } else if (userAge === 2) {
+            price = price - ((price * 40) / 100)
+        } 
+    }
+
+    
 
     console.log(price)
 
