@@ -6,6 +6,14 @@
 
 .app {
     height: 100vh;
+    background-color: #B91650;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
 button {

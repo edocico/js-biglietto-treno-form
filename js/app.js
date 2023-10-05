@@ -1,6 +1,7 @@
 console.log('hello world!')
 alert('completa il form per ottenere il costo del tuo biglietto')
 
+// recupero elementi del DOM
 const btnSendDOMElement = document.getElementById('send-btn')
 
 const btnReturnDOMElement = document.getElementById('return-btn')
@@ -14,8 +15,10 @@ console.dir(nKmDOMElement)
     
 const userAgeDOMElement = document.getElementById('discount')
 console.dir(userAgeDOMElement)
-   
 
+let price
+   
+//event listener bottone invia
 btnSendDOMElement.addEventListener('click', function (){
 
     const userName = usernameDOMElement.value
@@ -25,7 +28,7 @@ btnSendDOMElement.addEventListener('click', function (){
     const userAge = parseInt(userAgeDOMElement.value)
     console.log(userAge)
 
-    let price = nKm * 0.21
+    price = nKm * 0.21
     console.log(price)
 
     if (userAge === 0) {
@@ -38,6 +41,7 @@ btnSendDOMElement.addEventListener('click', function (){
 
 })
 
+// event listener bottone annulla
 btnReturnDOMElement.addEventListener('click' , function () {
     alert('ricarica la pagina e ricomicia')
 })
