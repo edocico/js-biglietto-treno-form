@@ -51,6 +51,9 @@ btnSendDOMElement.addEventListener('click', function (){
 
     //stampo sul biglietto il nome del passseggero
     passNameDOMElement.innerHTML = userName
+    //genero un numero casuale da 1 a 10 e lo stampo sul biglietto nel numero della carrozza
+    const genNumber = Math.floor((Math.random() * 10) + 1)
+    trainNumberDOMElement.innerHTML = genNumber.toString()
 
 })
 
