@@ -1,5 +1,5 @@
 console.log('hello world!')
-alert('completa il form per ottenere il costo del tuo biglietto')
+alert('Completa il form per ottenere il tuo biglietto')
 
 // recupero elementi del DOM
 const btnSendDOMElement = document.getElementById('send-btn')
@@ -16,6 +16,14 @@ console.dir(nKmDOMElement)
 const userAgeDOMElement = document.getElementById('discount')
 console.dir(userAgeDOMElement)
 
+const passNameDOMElement = document.getElementById('passenger-name')
+
+const trainNumberDOMElement = document.getElementById('train-number')
+
+const ticketPriceDOMElement = document.getElementById('ticket-price')
+
+
+
 // dichiaro variabili con global scope
 let price
    
@@ -29,7 +37,7 @@ btnSendDOMElement.addEventListener('click', function (){
     console.log(nKm)
     const userAge = parseInt(userAgeDOMElement.value)
     console.log(userAge)
-
+    // calcolo il prezzo di base
     price = nKm * 0.21
     console.log(price)
 
@@ -40,6 +48,9 @@ btnSendDOMElement.addEventListener('click', function (){
     } 
 
     console.log(price)
+
+    //stampo sul biglietto il nome del passseggero
+    passNameDOMElement.innerHTML = userName
 
 })
 
