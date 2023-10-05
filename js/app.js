@@ -16,6 +16,7 @@ console.dir(nKmDOMElement)
 const userAgeDOMElement = document.getElementById('discount')
 console.dir(userAgeDOMElement)
 
+// dichiaro variabili con global scope
 let price
    
 //event listener bottone invia
