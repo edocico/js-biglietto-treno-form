@@ -43,7 +43,8 @@ btnSendDOMElement.addEventListener('click', function (){
 
 })
 
-// event listener bottone annulla
+// event listener bottone annulla (clear input text)
 btnReturnDOMElement.addEventListener('click' , function () {
-    alert('ricarica la pagina e ricomicia')
+    document.getElementById('username').value = ""
+    document.getElementById('travelkm').value = ""
 })
