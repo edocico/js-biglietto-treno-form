@@ -42,7 +42,7 @@ btnSendDOMElement.addEventListener('click', function (){
     let price
     price = nKm * 0.21
     console.log(price)
-
+    // controllo condizione su username
     if (userName === '') {
         alert('i dati inseriti non sono validi')
         
