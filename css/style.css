@@ -27,3 +27,9 @@ button {
 .input-section {
     margin-bottom: 40px;
 }
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+}

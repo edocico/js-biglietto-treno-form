@@ -21,9 +21,10 @@ let price
    
 //event listener bottone invia
 btnSendDOMElement.addEventListener('click', function (){
-
+    // recupero valori elementi del DOM
     const userName = usernameDOMElement.value
     console.log(userName)
+    console.log(typeof userName)
     const nKm = parseFloat(nKmDOMElement.value)
     console.log(nKm)
     const userAge = parseInt(userAgeDOMElement.value)
