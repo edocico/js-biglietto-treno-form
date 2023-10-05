@@ -11,3 +11,11 @@
 button {
     color: black;
 }
+
+.data-section {
+    padding-top: 30px;
+}
+
+.input-section {
+    margin-bottom: 40px;
+}

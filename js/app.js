@@ -32,6 +32,15 @@ btnSendDOMElement.addEventListener('click', function (){
     const userAge = parseInt(userAgeDOMElement.value)
     console.log(userAge)
 
-    let basePrice = nKm * 0.21
-    
+    let price = nKm * 0.21
+    console.log(price)
+
+    if (userAge === 0) {
+        price = price - ((price * 20) / 100)
+    } else if (userAge === 2) {
+        price = price - ((price * 40) / 100)
+    } 
+
+    console.log(price)
+
 })
