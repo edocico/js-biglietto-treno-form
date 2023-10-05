@@ -54,6 +54,8 @@ btnSendDOMElement.addEventListener('click', function (){
     //genero un numero casuale da 1 a 10 e lo stampo sul biglietto nel numero della carrozza
     const genNumber = Math.floor((Math.random() * 10) + 1)
     trainNumberDOMElement.innerHTML = genNumber.toString()
+    //stampo sul biglietto il costo in euro
+    ticketPriceDOMElement.innerHTML = price.toFixed(2) + ' ' + '&euro;'
 
 })
 
