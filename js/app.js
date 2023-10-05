@@ -26,8 +26,7 @@ const ticketDOMElement = document.querySelector('.ticket-section')
 
 
 
-// dichiaro variabili con global scope
-let price
+
    
 //event listener bottone invia
 btnSendDOMElement.addEventListener('click', function (){
@@ -40,6 +39,7 @@ btnSendDOMElement.addEventListener('click', function (){
     const userAge = parseInt(userAgeDOMElement.value)
     console.log(userAge)
     // calcolo il prezzo di base
+    let price
     price = nKm * 0.21
     console.log(price)
 
