@@ -38,6 +38,14 @@ button {
     gap: 20px;
 }
 
+.display-n {
+    display: none;
+}
+
+.display-b {
+    display: block;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;

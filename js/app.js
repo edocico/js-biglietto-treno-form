@@ -22,6 +22,8 @@ const trainNumberDOMElement = document.getElementById('train-number')
 
 const ticketPriceDOMElement = document.getElementById('ticket-price')
 
+const ticketDOMElement = document.querySelector('.ticket-section')
+
 
 
 // dichiaro variabili con global scope
@@ -56,6 +58,9 @@ btnSendDOMElement.addEventListener('click', function (){
     trainNumberDOMElement.innerHTML = genNumber.toString()
     //stampo sul biglietto il costo in euro
     ticketPriceDOMElement.innerHTML = price.toFixed(2) + ' ' + '&euro;'
+    // faccio apparire la ticket-section
+    ticketDOMElement.classList.remove('display-n')
+    ticketDOMElement.classList.add('display-b')
 
 })
 
