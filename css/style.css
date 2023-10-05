@@ -7,3 +7,7 @@
 .app {
     height: 100vh;
 }
+
+button {
+    color: black;
+}
