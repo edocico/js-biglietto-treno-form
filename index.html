@@ -14,19 +14,19 @@
         <section class="input-section">
             <div>
                 <div>
-                    <input type="text" name="username" id="username" placeholder="Inserisci nome e cognome">
-                    <input type="number" name="travelkm" id="travelkm" placeholder="Inserisci quanti km vuoi percorrere">
+                    <input type="text" name="username" value="" id="username" placeholder="Inserisci nome e cognome">
+                    <input type="number" name="travelkm" value="" id="travelkm" placeholder="Inserisci quanti km vuoi percorrere">
 
                     <select name="discount" id="discount">
-                        <option value="">Minorenne</option>
-                        <option value="">Maggiorenne</option>
-                        <option value="">Over 65</option>
+                        <option value="0">Minorenne</option>
+                        <option value="1">Maggiorenne</option>
+                        <option value="2">Over 65</option>
                     </select>
                 </div>
 
                 <div>
-                    <button>Invia</button>
-                    <button>Annulla</button>
+                    <button id="send-btn">Invia</button>
+                    <button id="return-btn">Annulla</button>
                 </div>
 
             </div>
