@@ -1,4 +1,4 @@
-console.log('hello world!')
+//console.log('hello world!')
 alert('Completa il form per ottenere il tuo biglietto')
 
 // recupero elementi del DOM
@@ -8,13 +8,13 @@ const btnReturnDOMElement = document.getElementById('return-btn')
 
 
 const usernameDOMElement = document.getElementById('username')
-console.dir(usernameDOMElement)
+//console.dir(usernameDOMElement)
     
 const nKmDOMElement = document.getElementById('travelkm')
-console.dir(nKmDOMElement)
+//console.dir(nKmDOMElement)
     
 const userAgeDOMElement = document.getElementById('discount')
-console.dir(userAgeDOMElement)
+//console.dir(userAgeDOMElement)
 
 const passNameDOMElement = document.getElementById('passenger-name')
 
@@ -32,16 +32,16 @@ const ticketDOMElement = document.querySelector('.ticket-section')
 btnSendDOMElement.addEventListener('click', function (){
     // recupero valori elementi del DOM
     const userName = usernameDOMElement.value
-    console.log(userName)
-    console.log(typeof userName)
+    //console.log(userName)
+    //console.log(typeof userName)
     const nKm = parseFloat(nKmDOMElement.value)
-    console.log(nKm)
+    //console.log(nKm)
     const userAge = parseInt(userAgeDOMElement.value)
-    console.log(userAge)
+    //console.log(userAge)
     // calcolo il prezzo di base
     let price
     price = nKm * 0.21
-    console.log(price)
+    //console.log(price)
     // controllo condizione su username
     if (userName === '') {
         alert('i dati inseriti non sono validi')
@@ -56,7 +56,7 @@ btnSendDOMElement.addEventListener('click', function (){
 
     
 
-    console.log(price)
+    //console.log(price)
 
     //stampo sul biglietto il nome del passseggero
     passNameDOMElement.innerHTML = userName
